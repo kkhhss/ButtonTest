@@ -6,20 +6,44 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/bg_yellow"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/black"
+        android:textColor="@color/white"
         android:text="@string/txt1"
         android:layout_marginBottom="@dimen/margin_bottom"
         android:textSize="@dimen/text_large"
         />
     <Button
+        android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_medium"
         android:text="@string/btn1"
+        android:backgroundTint="@color/btn_red"
         />
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/text_medium"
+            android:text="@string/radiobtn_female"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/text_medium"
+            android:text="@string/radiobtn_male"
+            />
+    </RadioGroup>
 
 </LinearLayout>
